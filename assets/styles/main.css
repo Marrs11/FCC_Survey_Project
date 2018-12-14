@@ -19,16 +19,19 @@ body{
 h3 {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Merienda', cursive;
 }
 
 form{
     position: relative;
+    display: flex;
+    flex-direction: column;
     background: #2B2C2E;
     -webkit-box-shadow: 0px 0px 27px -2px rgba(38,38,38,1);
     -moz-box-shadow: 0px 0px 27px -2px rgba(38,38,38,1);
     box-shadow: 0px 0px 27px -2px rgba(38,38,38,1);
     border-radius: 0.25rem;
-    margin: 5vh auto 0 auto;
+    margin: 5vh auto 5vh auto;
     padding: 5%;
     min-width: 25vw;
     max-width: 35vw;
@@ -38,7 +41,7 @@ form{
 input, select{
     background: #3E3D42 !important;
     color: #F3F4F2 !important;
-    border: 2px solid #A49284 !important;
+    border: 2px solid #B6895F !important;
 }
 option{
 
@@ -72,19 +75,40 @@ input[type=number]::-webkit-inner-spin-button {
 
 select{
 
-    margin: auto;
+    margin: 0 auto 2rem auto;
     width: 336px !important;
 }
+
+.form-check{
+    margin: 0 auto;
+    padding: 4px;
+    justify-content: left;
+    width: 336px;
+}
+
+#checkLabel, #radioLabel{
+    color: #E6E6E6;
+    text-align: center;
+    font-family: 'Merienda', cursive;
+}
+
 
 .customSelect:hover{
     background: #B6895F !important;
     color: #e9e9e9 !important;
 }
 
-#textarea{
-    background: #EBEBEB !important;
-    color: #B6895F;
+.textarea{
+    margin-top: 2rem;
 }
+
+#textarea{
+    background: #3E3D42 !important;
+    color: #B6895F;
+    border: 2px solid #B6895F;
+}
+
+
 
 .submit-btn{
     display: flex;
